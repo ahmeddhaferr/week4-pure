@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./page.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="content">
+          <img src="./ToDo.png" />
+          <div class="side">
+            <a href="#" style="color: #0000ff">Home</a>
+            <a href="./page2.html" class="margL-20"
+              >About</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="main">
+      <div class="container">
+        <div>
+          <h1 style="margin-top: 40px">Simple ToDo App</h1>
+          <p style="color: #666666; margin-top: 2px">
+            This todo app for test design.
+          </p>
+        </div>
+        <div class="keys">
+          <input
+            class="ins"
+            type="text"
+            placeholder="Write Text here . . ."
+            id="input"
+          />
+          <button class="btn1" style="color: white" id="z">+ Add New</button>
+        </div>
+        <div class="line"></div>
+        <div class="content1">
+          <div id="list"></div>
+        </div>
+
+        <p class="p2" >
+          Total List : <span style="font-weight: bold; color: black" id="count"></span>
+        </p>
+        <button class="btn2" id="x" style="color: white">+ Add New</button>
+      </div>
+    </div>
+
+    <script src="./page.js"></script>
+  </body>
+</html>

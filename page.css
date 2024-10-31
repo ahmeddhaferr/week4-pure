@@ -1,0 +1,137 @@
+* {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+header {
+  border-bottom: 1px solid #eeeeee;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+.content1 {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.margL-20 {
+  color: black;
+  margin-left: 20px;
+}
+.side {
+  font-size: 18px;
+}
+.line {
+  height: 1px;
+  width: 100%;
+  background-color: #f6f6f6;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.box {margin-top: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f6f6f6;
+  width: 100%;
+  border: none;
+  height: 80px;
+}
+.keys {
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+.ins {
+  padding: 0px 16px;
+  border: none;
+  border-radius: 8px;
+  width: calc(100% - 200px);
+  height: 48px;
+  border: 1px solid #eeeeee;
+  font-size: 20px;
+}
+.ins:focus {
+  outline: none;
+}
+.btn1 {
+  transition: 0.5s;
+  border-radius: 8px;
+  width: 200px;
+  border: none;
+  background-color: blue;
+  margin-left: 20px;
+  font-size: 20px;
+}
+.btn2 {
+  transition: 0.5s;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  width: 100%;
+  border: none;
+  background-color: blue;
+  font-size: 20px;
+  height: 48px;
+  display: none;
+}
+
+.btn2:hover {
+  background-color: #666666;
+  transition: 0.4s;
+}
+.btn1:hover {
+  background-color: #666666;
+  transition: 0.4s;
+}
+.cls-btn:hover{
+transform: scale(110%);
+transition: 0.4s;
+
+}
+.cls-btn {
+  transition: 0.4s;
+  margin-right: 20px;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background-color: white;
+  border: 1px solid #FF0000;
+  border-radius: 6px;
+}
+.p1 {
+  font-size: 20px;
+  margin-left: 20px;
+}
+.p2 {
+  margin: 20px 0px;
+  color: #666666;
+  font-size: 20px;
+}
+@media (max-width: 500px) {
+  .btn1 {
+    display: none;
+  }
+  .btn2 {display: block;
+}
+.ins {
+ 
+    width:100%;
+    
+}
+.container {
+  max-width: 350px;
+  margin: auto;
+}
+}
