@@ -17,7 +17,7 @@ let list = [
 ];
 createListElem(list);
 
-document.getElementById("z").addEventListener("click", () => {
+document.getElementById("x").addEventListener("click", () => {
   let inputValue = document.getElementById("input").value;
   if (inputValue.trim() !== "") {
     list.push(inputValue);
@@ -25,10 +25,12 @@ document.getElementById("z").addEventListener("click", () => {
   }
 });
 
-document.getElementById("x").addEventListener("click", () => {
+document.getElementById("z").addEventListener("click", () => {
   let inputValue = document.getElementById("input").value;
-  list.push(inputValue);
-  createListElem(list);
+  if (inputValue.trim() !== "") {
+    list.push(inputValue);
+    createListElem(list);
+  }
 });
 
 const removeElem = (index) => {
